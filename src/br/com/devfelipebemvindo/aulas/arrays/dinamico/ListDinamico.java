@@ -1,6 +1,6 @@
 package br.com.devfelipebemvindo.aulas.arrays.dinamico;
 
-import br.com.devfelipebemvindo.teladelogin.User;
+import br.com.devfelipebemvindo.meusprojetos.teladelogin.User;
 
 import java.util.ArrayList;
 import java.util.List;

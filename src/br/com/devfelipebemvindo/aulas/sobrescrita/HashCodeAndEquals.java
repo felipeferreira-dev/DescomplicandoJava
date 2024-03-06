@@ -1,6 +1,6 @@
 package br.com.devfelipebemvindo.aulas.sobrescrita;
 
-import br.com.devfelipebemvindo.teladelogin.User;
+import br.com.devfelipebemvindo.meusprojetos.teladelogin.User;
 
 // HashCode é um indentificador único, uma sequencia de caracteres que identifica o objeto
 // MUITO ÚTIL PARA COMPARAR DADOS ARMAZENADOS NO BANCO DE DADOS E LISTAS

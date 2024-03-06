@@ -1,4 +1,4 @@
-package br.com.devfelipebemvindo.felipe;
+package br.com.devfelipebemvindo.meusprojetos;
 
 import javax.swing.*;
 

@@ -1,6 +1,6 @@
 package br.com.devfelipebemvindo.aulas.arrays.fixo;
 
-import br.com.devfelipebemvindo.teladelogin.User;
+import br.com.devfelipebemvindo.meusprojetos.teladelogin.User;
 
 public class ArrayLocalConteudoFixo {
 

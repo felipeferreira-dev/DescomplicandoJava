@@ -1,6 +1,6 @@
 package br.com.devfelipebemvindo.aulas;
 
-import br.com.devfelipebemvindo.teladelogin.User;
+import br.com.devfelipebemvindo.meusprojetos.teladelogin.User;
 
 public class Static {
 
