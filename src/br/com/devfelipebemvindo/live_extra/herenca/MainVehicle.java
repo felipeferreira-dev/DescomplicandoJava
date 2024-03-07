@@ -1,6 +1,6 @@
 package br.com.devfelipebemvindo.live_extra.herenca;
 
-public class MainCar {
+public class MainVehicle {
 
     public static void main(String[] args) {
         // Instanciando os objetos
