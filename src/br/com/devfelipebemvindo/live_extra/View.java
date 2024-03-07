@@ -26,7 +26,7 @@ public class View {
         return button;
     }
 
-    public void setButton(Button button) {
+    public void setMainButton(Button button) {
         this.button = button;
     }
 }
