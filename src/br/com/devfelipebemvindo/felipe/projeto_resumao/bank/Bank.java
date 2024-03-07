@@ -17,7 +17,7 @@ public class Bank {
 
     public Account generateAccount(String name) {
         Account account = new Account(ag, "" + lastAccount, name);
-        lastAccount++;
+        lastAccount = (int) Math.floor(Math.random() * 100); // gerando um numero aleatório para a conta
         return account;
     }
 
