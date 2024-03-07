@@ -28,8 +28,7 @@
 ### Por fim o projeto contempla o desenvolvimento de um algorítimo que contempla todos os conceitos mencionados acima, a aplicação simula uma agencia bancária, onde é possível criar uma lista de contas que são gerenciadas pelo banco.
 
 ### Outro desenvolvimento de algoritmo focado nos conceitos estudados, foi de uma tela de login, onde um usuário pode efetuar o cadastro do login e senha e depois precisa realizar o login no sistema.
-
-
+<br1></br1> 
 > Desenvolvido durante o curso "*DescomplicandoJava*" do Mobile Developer [Tiago Aguiar](https://github.com/tiago-aguiar).
 ***
 
