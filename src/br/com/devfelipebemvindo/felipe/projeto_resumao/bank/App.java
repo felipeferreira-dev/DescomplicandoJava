@@ -23,12 +23,13 @@ public class App {
                 case "C" -> {
                     logger.print("Digite seu nome: ");
                     String name = scanner.nextLine();
-                    account = santander.generateAccount(name);
-                    santander.insertAccount(account);
 
-                    generateAccount(scanner, logger, account, isExit);
+                    account = santander.bankGenerateAccount(name); // Gerando uma nova conta no banco
+                    santander.insertAccount(account); // Inserindo a nova conta na lista de contas do banco
 
-                    scanner = new Scanner(System.in);
+                    managementAccount(scanner, logger, account, isExit); // Gerenciando a conta
+
+                    scanner = new Scanner(System.in); // reinicia o scanner para evitar exibir a mensagem 2 vezes
                 }
 
                 case "SAIR" -> isExit = true;
@@ -37,16 +38,19 @@ public class App {
             }
         }
 
+        // Apos finalizar, recupero a lista de contas cadastradas
         List<Account> listAccounts = santander.getAccounts();
 
-        for (Account acount : listAccounts) {
-            logger.print(acount.toString());
+        // Exibo no terminal os dados das contas
+        for (Account acc : listAccounts) {
+            logger.print(acc.toString());
         }
 
-        santander.outputTotal();
+        // Imprimindo o valor total de todas as contas somadas
+        logger.print("\nTOTAL CAIXA: R$ " + santander.outputTotal());
     }
 
-    private static void generateAccount(Scanner scanner, Log logger, Account account, boolean isExit) {
+    private static void managementAccount(Scanner scanner, Log logger, Account account, boolean isExit) {
         while (!isExit) {
             logger.print("Digite -> D (deposito) | S (saque) | SAIR (finalizar)");
             String operation = scanner.nextLine();

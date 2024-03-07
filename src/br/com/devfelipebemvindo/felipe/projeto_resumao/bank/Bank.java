@@ -6,7 +6,7 @@ import java.util.List;
 public class Bank {
 
     private String ag;
-    private int lastAccount = 1;
+    private int lastAccount;
 
     private List<Account> accounts;
 
@@ -15,10 +15,9 @@ public class Bank {
         this.accounts = new ArrayList<>();
     }
 
-    public Account generateAccount(String name) {
-        Account account = new Account(ag, "" + lastAccount, name);
+    public Account bankGenerateAccount(String name) {
         lastAccount = (int) Math.floor(Math.random() * 100); // gerando um numero aleatório para a conta
-        return account;
+        return new Account(ag, "" + lastAccount, name);
     }
 
     public void insertAccount(Account account) {
@@ -29,7 +28,7 @@ public class Bank {
         return accounts;
     }
 
-    public void outputTotal() {
+    public double outputTotal() {
         double total = 0;
 
         for (Account account : accounts) {
@@ -37,6 +36,6 @@ public class Bank {
             total += balance;
         }
 
-        System.out.println("\nTOTAL CAIXA: R$ " + total);
+        return total;
     }
 }
