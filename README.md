@@ -21,6 +21,8 @@
 - ``HashCode e Equals``
 - ``OOP``
 - ``Ordenação``
+- ``Collections``
+- ``Math``
 
 
 ### Por fim o projeto contempla o desenvolvimento de um algorítimo que contempla todos os conceitos mencionados acima, a aplicação simula uma agencia bancária, onde é possível criar uma lista de contas que são gerenciadas pelo banco.
